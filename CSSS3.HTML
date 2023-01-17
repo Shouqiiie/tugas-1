@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0 120px;
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        span{
+            color: blue;
+        }
+
+        .menu-kiri{
+            padding: 20px;
+            border-radius: 20px 0 20px 0;
+            cursor: pointer;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .menu-tengah{
+            margin-top: 25px;
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        .menu-tengah a{
+            text-decoration: none;
+            color: #000;
+        }
+
+        .menu-tengah a.active{
+            font-weight: bold;
+        } 
+
+        li{
+            list-style: none;
+        }
+
+        .menu-kanan {
+            display: flex;
+            padding: 5px 20px;
+            
+        }
+
+        .menu-kanan li a{
+            text-decoration: none;
+        }
+
+        .ig{
+            padding: 15px 20px;
+            margin-right: 5px;
+            border: 2px solid red;
+            border-radius: 30px;
+        }
+
+        .wa{
+            padding: 15px 20px;
+            margin-right: 5px;
+            border: 2px solid green;
+            border-radius: 30px;
+        }
+
+        img{
+            width: 280px;
+            height: 180px;
+        }
+
+        .hero{
+            display: flex;
+        }
+
+        img{
+            margin-right: 10px;
+            border-radius: 10px;
+            box-shadow: 5px 5px gray;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu-kiri">
+            Muhammad <span>Shouqi</span>
+        </div>
+
+        <div class="menu-tengah">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Nomor 1</a></li>
+            <li><a href="#">Nomor 2</a></li>
+            <li><a href="#">Nomor 3</a></li>
+        </div>
+
+        <div class="menu-kanan">
+            <li class="ig"><a href="#">Instagram</a></li>
+            <li class="wa"><a href="#">WhatsApp</a></li>
+        </div>
+    </div>
+
+    <P>Kemampuan Saya</P>
+    <div class="hero">
+        <div class="box-1"><img src="html.webp" alt=""></div>
+        <div class="box-2"><img src="css.webp" alt=""></div>
+        <div class="box-2"><img src="bootstrap5.png" alt=""></div>
+        <div class="box-2"><img src="javascript.webp" alt=""></div>
+    </div>
+</body>
+</html>

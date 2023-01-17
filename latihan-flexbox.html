@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1 | CSS Flexbox</title>
+    <style>
+        body{
+            padding: 0 120px;
+        }
+
+        .container{
+            display: flex;
+            margin-top: 30px;
+            justify-content: space-between;
+        }
+
+        .menu-kiri{
+            background-color: red;
+            color: #fff;
+            padding: 20px;
+            border-radius: 20px 0 20px 0;
+            cursor: pointer;
+        }
+
+        .menu-tengah{
+            margin-top: 25px;
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        .menu-tengah a{
+            text-decoration: none;
+            color: #000;
+        }
+
+        .menu-tengah a.active{
+            font-weight: bold;
+        } 
+
+        .menu-kanan{
+            cursor: pointer;
+            background-color: blue;
+            color: #fff;
+            padding: 20px;
+            border-radius: 0 20px 0 20px;
+        }
+
+        .hero{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            font-weight: bold;
+            font-size: 28px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .box-1{
+            background: greenyellow;
+            margin-right: 5px;
+            width: 50%;
+            height: 600px;
+            line-height: 600px;
+            text-align: center;
+        }
+        
+        .box-2{
+            background: pink;
+            width: 50%;
+            height: 600px;
+            line-height: 600px;
+            text-align: center;
+        }
+
+        .footer{
+            font-family: Arial, Helvetica, sans-serif;
+            background: aqua;
+            color: #fff;
+            font-size: 21px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 0 0 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu-kiri">
+            Menu Kiri
+        </div>
+
+        <div class="menu-tengah">
+            <li><a href="#" class="active">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+        </div>
+
+        <div class="menu-kanan">
+            Menu Kanan
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="box-1">Box 1</div>
+        <div class="box-2">Box 2</div>
+    </div>
+
+    <div class="footer">
+        Copyright by - Muhammad Shouqi - PPLG 1
+    </div>
+</body>
+</html>
